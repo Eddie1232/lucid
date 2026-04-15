@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - LU(ID Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="LUCID.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">LU(ID</div>
+    <nav class="nav-links">
+      <a href="LUCID.html">Home</a>
+      <a href="LUCID.html#collection">Collection</a>
+      <a href="LUCID.html#about">About</a>
+      <a href="shop_the_drop.html">Shop</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open mobile menu">☰</button>
+    <div class="mobile-nav" id="mobileNav">
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close mobile menu">×</button>
+      <a href="LUCID.html">Home</a>
+      <a href="LUCID.html#collection">Collection</a>
+      <a href="LUCID.html#about">About</a>
+      <a href="shop_the_drop.html">Shop</a>
+      <a href="cart.html" class="mobile-cart-link">Cart</a>
+    </div>
+    <div class="cart-container">
+      <a href="cart.html" class="cart-btn" aria-label="Shopping cart">
+        🛒 <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <div class="section-intro">
+        <p class="section-label">YOUR CART</p>
+        <h2>Review your selections</h2>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be populated by JS -->
+      </div>
+      <div class="cart-summary" id="cartSummary">
+        <!-- Total will be shown here -->
+      </div>
+      <div class="payment-section">
+        <h3>Payment Details</h3>
+        <form id="paymentForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Shipping Address</label>
+            <textarea id="address" required></textarea>
+          </div>
+          <div class="form-group payment-methods">
+            <label>Payment Method</label>
+            <div class="radio-row">
+              <label><input type="radio" name="paymentMethod" value="card" checked /> Card</label>
+              <label><input type="radio" name="paymentMethod" value="cod" /> Pay After Delivery</label>
+              <label><input type="radio" name="paymentMethod" value="mobile" /> Mobile Money</label>
+            </div>
+          </div>
+          <div id="cardFields">
+            <div class="form-group">
+              <label for="cardNumber">Card Number</label>
+              <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="expiry">Expiry Date</label>
+                <input type="text" id="expiry" placeholder="MM/YY" />
+              </div>
+              <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123" />
+              </div>
+            </div>
+          </div>
+          <div id="mobileFields" class="hidden">
+            <div class="form-group">
+              <label for="mobileCountry">Country</label>
+              <select id="mobileCountry">
+                <option value="">Select country</option>
+                <option value="ghana">Ghana</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="uk">United Kingdom</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mobileProvider">Mobile Money Provider</label>
+              <select id="mobileProvider">
+                <option value="">Select provider</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mobileNumber">Mobile Number</label>
+              <input type="text" id="mobileNumber" placeholder="024 000 0000" />
+            </div>
+          </div>
+          <div id="codNote" class="hidden notice-box">
+            Pay after delivery. Our courier will collect payment when your order arrives.
+          </div>
+          <button type="submit" class="checkout-btn">Complete Purchase</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>LU(ID Clothing © 2026</p>
+    <p><a href="https://github.com/Eddie1232" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+  </footer>
+
+  <script src="LUCID.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

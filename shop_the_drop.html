@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop the Drop - LU(ID Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="LUCID.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">LU(ID</div>
+    <nav class="nav-links">
+      <a href="LUCID.html">Home</a>
+      <a href="LUCID.html#collection">Collection</a>
+      <a href="LUCID.html#about">About</a>
+      <a href="#shop">Shop</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open mobile menu">☰</button>
+    <div class="mobile-nav" id="mobileNav">
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close mobile menu">×</button>
+      <a href="LUCID.html">Home</a>
+      <a href="LUCID.html#collection">Collection</a>
+      <a href="LUCID.html#about">About</a>
+      <a href="#shop">Shop</a>
+      <a href="cart.html" class="mobile-cart-link">Cart</a>
+    </div>
+    <div class="cart-container">
+      <a href="cart.html" class="cart-btn" aria-label="Shopping cart">
+        🛒 <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="shop-section">
+      <div class="section-intro">
+        <p class="section-label">SHOP THE DROP</p>
+        <h2>Exclusive new arrivals</h2>
+        <p>Discover the latest pieces from our curated collection.</p>
+      </div>
+      <div class="shop-filter" id="shopFilter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hoodie">Hoodies</button>
+        <button class="filter-btn" data-filter="shirt">Shirts</button>
+        <button class="filter-btn" data-filter="jacket">Jackets</button>
+        <button class="filter-btn" data-filter="pants">Pants</button>
+        <button class="filter-btn" data-filter="shoes">Shoes</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+      <div class="shop-grid">
+        <article class="shop-item" data-category="hoodie" data-description="Premium quality hoodie made from soft, durable cotton blend. Features a comfortable fit and modern design perfect for everyday wear.">
+          <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80" alt="Premium Hoodie" />
+          <div class="item-details">
+            <h3>Premium Hoodie</h3>
+            <p class="price">$89.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="shop-item" data-category="shirt" data-description="Stylish streetwear tee with a relaxed fit and premium cotton fabric. Perfect for layering or wearing on its own with a modern urban vibe.">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Streetwear Tee" />
+          <div class="item-details">
+            <h3>Streetwear Tee</h3>
+            <p class="price">$39.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="shop-item" data-category="pants" data-description="Versatile cargo pants with multiple pockets and a comfortable, durable design. Ideal for casual outings or urban exploration.">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80" alt="Cargo Pants" />
+          <div class="item-details">
+            <h3>Cargo Pants</h3>
+            <p class="price">$79.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="shop-item" data-category="jacket" data-description="Classic bomber jacket with a sleek design and lightweight material. Perfect for transitional weather and adding edge to any outfit.">
+          <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?auto=format&fit=crop&w=800&q=80" alt="Bomber Jacket" />
+          <div class="item-details">
+            <h3>Bomber Jacket</h3>
+            <p class="price">$129.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="shop-item" data-category="shoes" data-description="Comfortable urban sneakers with a modern design and superior cushioning. Built for all-day wear and versatile styling.">
+          <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&w=800&q=80" alt="Sneakers" />
+          <div class="item-details">
+            <h3>Urban Sneakers</h3>
+            <p class="price">$149.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="shop-item" data-category="accessories" data-description="Cozy classic beanie made from soft wool blend. Keeps you warm and adds a stylish touch to your winter wardrobe.">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" alt="Beanie" />
+          <div class="item-details">
+            <h3>Classic Beanie</h3>
+            <p class="price">$24.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="shop-item" data-category="jacket" data-description="Timeless denim jacket with a vintage wash and classic fit. A wardrobe essential that pairs perfectly with any outfit.">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80" alt="Denim Jacket" />
+          <div class="item-details">
+            <h3>Denim Jacket</h3>
+            <p class="price">$99.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+        <article class="shop-item" data-category="shirt" data-description="Bold graphic tee featuring unique artwork and a comfortable cotton blend. Express your style with this eye-catching piece.">
+          <img src="https://images.unsplash.com/photo-1506629905607-0b5b8b5e4b8b?auto=format&fit=crop&w=800&q=80" alt="Graphic Tee" />
+          <div class="item-details">
+            <h3>Graphic Tee</h3>
+            <p class="price">$34.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="shop">
+    <p>LU(ID Clothing © 2026</p>
+    <p><a href="https://github.com/Eddie1232" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+  </footer>
+
+  <div class="modal" id="imageModal">
+    <div class="modal-content">
+      <img id="modalImage" src="" alt="" />
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+    </div>
+  </div>
+
+  <div class="quick-view-modal" id="quickViewModal">
+    <div class="quick-view-content">
+      <button class="close-quick-view" aria-label="Close quick view">&times;</button>
+      <div class="quick-view-image">
+        <img id="quickViewImage" src="" alt="" />
+      </div>
+      <div class="quick-view-details">
+        <h3 id="quickViewTitle"></h3>
+        <p class="quick-view-price" id="quickViewPrice"></p>
+        <p class="quick-view-description" id="quickViewDescription"></p>
+        <div class="quantity-selector">
+          <label for="quickViewQuantity">Quantity:</label>
+          <div class="quantity-input">
+            <button id="decreaseQty" type="button">−</button>
+            <input type="number" id="quickViewQuantity" value="1" min="1" max="99" />
+            <button id="increaseQty" type="button">+</button>
+          </div>
+        </div>
+        <button class="add-to-cart quick-view-add">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="LUCID.js"></script>
+</body>
+</html>
