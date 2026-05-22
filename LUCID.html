@@ -1,146 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LU(ID Clothing</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="LUCID.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="brand">LU(ID</div>
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#collection">Collection</a>
-      <a href="#about">About</a>
-      <a href="shop_the_drop.html">Shop</a>
-    </nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open mobile menu">☰</button>
-    <div class="mobile-nav" id="mobileNav">
-      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close mobile menu">×</button>
-      <a href="#home">Home</a>
-      <a href="#collection">Collection</a>
-      <a href="#about">About</a>
-      <a href="shop_the_drop.html">Shop</a>
-      <a href="cart.html" class="mobile-cart-link">Cart</a>
-    </div>
-    <div class="cart-container">
-      <a href="cart.html" class="cart-btn" aria-label="Shopping cart">
-        🛒 <span class="cart-count">0</span>
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-slider" aria-label="LU(ID clothing hero slider">
-        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80');">
-          <div class="slide-overlay"></div>
-          <div class="slide-copy">
-            <span class="eyebrow">FRESH STREETWEAR</span>
-            <h1>WELCOME TO <span>LU(ID CLOTHING</span></h1>
-            <p>Discover bold hoodies, sleek shirts, and standout essentials built for every move.</p>
-          </div>
-        </div>
-        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1520975698511-c8024d3c1fb5?auto=format&fit=crop&w=1200&q=80');">
-          <div class="slide-overlay"></div>
-          <div class="slide-copy">
-            <span class="eyebrow">ICONIC LOOKS</span>
-            <h1>YOUR NEXT <span>FIT</span> STARTS HERE</h1>
-            <p>Every swipe reveals premium apparel designed for confident style.</p>
-          </div>
-        </div>
-        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1200&q=80');">
-          <div class="slide-overlay"></div>
-          <div class="slide-copy">
-            <span class="eyebrow">LIMITED DROP</span>
-            <h1>DESIGNER HOODIES, <span>FRESH</span> VIBES</h1>
-            <p>Refresh your wardrobe with standout pieces made for modern urban style.</p>
-          </div>
-        </div>
-      </div>
-      <div class="slider-controls">
-        <button class="control prev" aria-label="Previous slide">‹</button>
-        <button class="control next" aria-label="Next slide">›</button>
-      </div>
-    </section>
-
-    <section class="collection" id="collection">
-      <div class="section-intro">
-        <p class="section-label">NEW ARRIVALS</p>
-        <h2>Curated picks for the modern wardrobe</h2>
-      </div>
-      <div class="cards">
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Stylish hoodie" />
-          <div>
-            <h3>Cloudcore Hoodie</h3>
-            <p class="price">$89.99</p>
-            <p>Soft, oversized hoodie with bold color blocking.</p>
-            <div class="product-quantity">
-              <label>Qty:</label>
-              <input type="number" class="qty-input" value="1" min="1" max="99" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LU(ID Clothing</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="LUCID.css" />
+        </head>
+        <body>
+        <header class="site-header">
+            <div class="brand">LU(ID</div>
+            <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="shop_the_drop.html">Shop</a>
+            <a href="orders.html">Orders</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="login.html" id="accountLink">Account</a>
+            <a href="promo_admin.html" title="Manage Promos">Promos</a>
+            <a href="admin.html" class="admin-link" title="Admin Dashboard">⚙️</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open mobile menu">☰</button>
+            <div class="mobile-nav" id="mobileNav">
+            <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close mobile menu">×</button>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="shop_the_drop.html">Shop</a>
+            <a href="orders.html" class="mobile-cart-link">Orders</a>
+            <a href="login.html" class="mobile-cart-link">Account</a>
+            <a href="cart.html" class="mobile-cart-link">Cart</a>
+            <a href="admin.html" class="mobile-cart-link">Admin</a>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
-        </article>
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1495121605193-b116b5b9c5d7?auto=format&fit=crop&w=800&q=80" alt="Fashionable shirt" />
-          <div>
-            <h3>Signature Shirt</h3>
-            <p class="price">$39.99</p>
-            <p>Minimal silhouette with premium tailoring for all-day comfort.</p>
-            <div class="product-quantity">
-              <label>Qty:</label>
-              <input type="number" class="qty-input" value="1" min="1" max="99" />
+            <div class="cart-container">
+            <a href="wishlist.html" class="wishlist-badge" aria-label="Wishlist">
+                ♥ <span class="wishlist-count">0</span>
+            </a>
+            <a href="cart.html" class="cart-btn" aria-label="Shopping cart">
+                🛒 <span class="cart-count">0</span>
+            </a>
             </div>
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
-        </article>
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1516893840285-2f5cfe286b04?auto=format&fit=crop&w=800&q=80" alt="Streetwear jacket" />
-          <div>
-            <h3>Urban Jacket</h3>
-            <p class="price">$129.99</p>
-            <p>Statement outerwear made for layered looks and cool days.</p>
-            <div class="product-quantity">
-              <label>Qty:</label>
-              <input type="number" class="qty-input" value="1" min="1" max="99" />
-            </div>
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
-        </article>
-      </div>
-    </section>
+        </header>
+        <div id="welcomeToast" class="welcome-toast"></div>
 
-    <section class="about" id="about">
-      <div class="about-content">
-        <div>
-          <span class="section-label">ABOUT LU(ID</span>
-          <h2>We’re built on bold style and confident comfort.</h2>
-          <p>LU(ID combines premium materials with polished details, delivering a clothing experience that feels modern, effortless, and unforgettable.</p>
-          <a class="cta-button" href="shop_the_drop.html">Shop the drop</a>
+        <main>
+            <section class="hero" id="home">
+            <div class="hero-slider" aria-label="LU(ID clothing hero slider">
+                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-copy">
+                        <span class="eyebrow">FRESH STREETWEAR</span>
+                        <h1>WELCOME TO <span>LU(ID CLOTHING</span></h1>
+                        <p>Discover bold hoodies, sleek shirts, and standout essentials built for every move.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1520975698511-c8024d3c1fb5?auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-copy">
+                        <span class="eyebrow">ICONIC LOOKS</span>
+                        <h1>YOUR NEXT <span>FIT</span> STARTS HERE</h1>
+                        <p>Every swipe reveals premium apparel designed for confident style.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1200&q=80');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-copy">
+                        <span class="eyebrow">LIMITED DROP</span>
+                        <h1>DESIGNER HOODIES, <span>FRESH</span> VIBES</h1>
+                        <p>Refresh your wardrobe with standout pieces made for modern urban style.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="control prev" aria-label="Previous slide">‹</button>
+                <button class="control next" aria-label="Next slide">›</button>
+            </div>
+            </section>
+
+            <section class="collection" id="collection">
+            <div class="section-intro">
+                <p class="section-label">NEW ARRIVALS</p>
+                <h2>Curated picks for the modern wardrobe</h2>
+            </div>
+            <div class="cards">
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Stylish hoodie" />
+                    <div>
+                        <h3>Cloudcore Hoodie</h3>
+                        <p class="price">$89.99</p>
+                        <p>Soft, oversized hoodie with bold color blocking.</p>
+                        <div class="product-quantity">
+                            <label>Qty:</label>
+                            <input type="number" class="qty-input" value="1" min="1" max="99" />
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1495121605193-b116b5b9c5d7?auto=format&fit=crop&w=800&q=80" alt="Fashionable shirt" />
+                    <div>
+                        <h3>Signature Shirt</h3>
+                        <p class="price">$39.99</p>
+                        <p>Minimal silhouette with premium tailoring for all-day comfort.</p>
+                        <div class="product-quantity">
+                            <label>Qty:</label>
+                            <input type="number" class="qty-input" value="1" min="1" max="99" />
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    </article>
+                <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1516893840285-2f5cfe286b04?auto=format&fit=crop&w=800&q=80" alt="Streetwear jacket" />
+                <div>
+                    <h3>Urban Jacket</h3>
+                    <p class="price">$129.99</p>
+                    <p>Statement outerwear made for layered looks and cool days.</p>
+                    <div class="product-quantity">
+                        <label>Qty:</label>
+                        <input type="number" class="qty-input" value="1" min="1" max="99" />
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                </article>
+            </div>
+            </section>
+
+            <section class="about" id="about">
+            <div class="about-content">
+                <div>
+                    <span class="section-label">ABOUT LU(ID</span>
+                    <h2>We’re built on bold style and confident comfort.</h2>
+                    <p>LU(ID combines premium materials with polished details, delivering a clothing experience that feels modern, effortless, and unforgettable.</p>
+                    <a class="cta-button" href="shop_the_drop.html">Shop the drop</a>
+                </div>
+                <div class="about-image"></div>
+            </div>
+            </section>
+        </main>
+
+        <footer class="site-footer" id="shop">
+            <p>LU(ID Clothing © 2026</p>
+            <div class="compliance-footer">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+        </footer>
+
+        <div class="modal" id="imageModal">
+            <div class="modal-content">
+            <img id="modalImage" src="" alt="" />
+            <button class="close-modal" aria-label="Close modal">&times;</button>
+            </div>
         </div>
-        <div class="about-image"></div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer" id="shop">
-    <p>LU(ID Clothing © 2026</p>
-    <p><a href="https://github.com/Eddie1232" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-  </footer>
+        <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
 
-  <div class="modal" id="imageModal">
-    <div class="modal-content">
-      <img id="modalImage" src="" alt="" />
-      <button class="close-modal" aria-label="Close modal">&times;</button>
-    </div>
-  </div>
+        <div id="cookieConsentBanner" class="cookie-consent">
+          <div class="cookie-content">
+            <div class="cookie-text">
+              <strong>Privacy Notice:</strong> We use essential cookies to maintain site functionality. By continuing to browse, you consent to our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a>.
+            </div>
+            <div class="cookie-actions">
+              <button class="cookie-btn" onclick="acceptEssentialCookies()">Essential Only</button>
+              <button class="cookie-btn cookie-accept" onclick="acceptAllCookies()">Accept All</button>
+            </div>
+          </div>
+        </div>
 
-  <script src="LUCID.js"></script>
-</body>
+        <script src="LUCID.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            initCookieConsent();
+          });
+        </script>
+    </body>
 </html>
