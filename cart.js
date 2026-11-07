@@ -48,6 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     orders.push(order);
     saveOrders(orders);
+    // Record the order in the Business Pulse tracker (no-op when not configured).
+    try {
+      if (window.LucidPulse) window.LucidPulse.trackOrder(order);
+    } catch (err) {
+      console.warn('Business Pulse tracking failed', err);
+    }
     return order;
   }
 
